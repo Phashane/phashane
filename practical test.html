@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta charset="utf-8" lang="en">
+<head>
+	<title>Phashane kutumeLA</title>
+	<link rel="stylesheet" type="text/css" href="practical.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body id="main">
+	<header><h1>Treasure Kutumela</h1></header>
+	<hr>
+	<section id="container">
+		<p id="box-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		</p>
+		<p id="box-2">
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</section>
+    
+	    	<h1 id="head-2">
+	    		WELCOME TO MY YOUTUBE CHANNEL
+		    	</h1>
+	 <section >
+	    <h5 align="center">
+	    	<em>Register below</em></h5>
+				<form id="form">
+					<label>NAME:</label>
+		    		<input type="text" placeholder="Enter your username" required>
+		    		<br>
+		    		<label>PASSWORD:</label>
+		    		<input type="password" placeholder="Enter your Passoword" maxlength="20" required>
+		    		<br>
+			        <label>Email Address:</label>
+			        <input type="email" placeholder="Enter email">
+			        <br>
+		    		<label>BIO:</label>
+		    		<textarea id="bio" rows="4" cols="30" wrap="soft"></textarea> 
+		    		<br>
+		    		<label>
+	           			 <input type="checkbox" value="yes">
+				         Accept Terms and Conditions
+			        </label>
+			        <br>
+			        <input type="submit" name="Submit">
+
+	    		</form>
+	</section>
+    <section>
+    	<p id="box-3">
+	    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    	</p>
+    	<p id="box-4">
+    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    	</p>
+    	<p id="box-5">
+    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    	</p>
+
+    </section>
+    <div class="table">
+	    <table>
+	    	<caption>students</caption>
+	    	<tr>
+	    		<th>NAME</th><th>SURNAME</th><th>HOBBIES</th>
+
+	    	</tr>
+	    	<tr>
+	    		<td>Treasure</td><td>Kutumela</td><td rowspan="2">Soccer</td>
+	    	</tr>
+	    	<tr>
+	    		<td >Phashy</td><td>Kutu</td>
+	    	</tr>
+	    	<tr>
+	    		<td>lebo</td><td>Mela</td><td>Netball</td>
+	    	</tr>
+	    	<tr>
+	    		<td>Thabo</td><td>Nkuna</td><td>Chess</td>
+	    	</tr>
+	    	<tr>
+	    		<td>Neo</td><td>Oupa</td><td>Pool</td>
+	    	</tr>
+	    	<tr >
+	    		<td colspan="2">all learners</td>
+	    	</tr>
+
+	    </table>
+	</div>
+	<p id="secret-box" style="display:none; text-align:center; background-color: yellow; padding: 10px; font-weight: bold;">
+		🎉 Surprise! You triggered the fadeIn() effect! 🎉
+	</p>
+		<img src="phash.jpeg">
+			<button onclick="alert('hellooo')"> click me</button>
+	<script>
+		// Ensures code runs only after the DOM structure is fully loaded
+		$(document).ready(function() {
+			
+			// 1. Alert on page load (Your original vanilla script converted or kept)
+			alert("hi student");
+
+			// 2. Handling the click() event for the main alert button
+			$("#btn-click-me").click(function() {
+				alert('hellooo from jQuery!');
+			});
+
+			// 3. Handling the hide() event for the registration form container
+			$("#btn-hide").click(function() {
+				$("#registration-section").hide(500); // 500ms duration for a smooth slide-away slide
+			});
+
+			// 4. Handling the show() event to bring the registration form back
+			$("#btn-show").click(function() {
+				$("#registration-section").show(500);
+			});
+
+			// 5. Handling the fadeIn() event for the hidden secret box element
+			$("#btn-fade").click(function() {
+				$("#secret-box").fadeIn(1000); // Takes 1 second to fully fade in
+			});
+		});
+	</script>
+
+</body>
